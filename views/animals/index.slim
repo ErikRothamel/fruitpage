@@ -1,0 +1,10 @@
+h1 Alla djur 
+
+- @dataanimal.each do |animal|
+    h2 
+        a href="/animals/#{animal["id"]}/edit" #{animal["name"]}
+
+    p Det finns #{animal["amount"]}st
+
+    form action="/animals/#{animal["id"]}/delete" method="post"
+        input type="submit" value="kill"/

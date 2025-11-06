@@ -1,0 +1,6 @@
+h2 UPPDATERA DIN FRUKT 
+
+form action="/fruits/#{@special_fruit['id']}/update" method="post" 
+    input type="text" name="name" value="#{@special_fruit['name']}"
+    input type="number" name="amount" value="#{@special_fruit['amount']}"
+    input type="submit" value="UPPDATERA"
